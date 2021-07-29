@@ -1,17 +1,32 @@
 {
-  "name": "local-api",
+  "name": "@jsnote-rts/local-api",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "start": "tsc --watch --preserveWatchOutput",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/cors": "^2.8.11",
+    "@types/express": "^4.17.13",
     "typescript": "^4.3.5"
-  }
+  },
+  "dependencies": {
+    "@jsnote-rts/local-client": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^2.0.1"
+  },
+  "gitHead": "524320dcc7c029e3d1a54a1284927c28f7f42822"
 }
