@@ -1,6 +1,6 @@
 {
   "name": "@jsnote-rts/local-client",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "publishConfig": {
     "access": "public"
   },
@@ -66,5 +66,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "gitHead": "524320dcc7c029e3d1a54a1284927c28f7f42822"
 }
